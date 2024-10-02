@@ -1,0 +1,486 @@
+/* common colors */
+body {
+    --white: #fff;
+    --green: #00B011;
+    --gray-707070: #707070;
+    --blue: #344054;
+    --black: #001502;
+    --3A2E7D: #3a2e7d;
+    --F0F4E1: #f0f4e1;
+    --B4B4B4: #b4b4b4;
+    --A63CB6: #a63cb6;
+    --F0F4E180: #f0f4e180;
+    --headerPadding: 6.819em;
+    --IT: "Inter", sans-serif;
+    font-family: var(--IT);
+}
+
+*,
+*:focus,
+*:visited,
+input:focus,
+textarea:focus,
+.focus,
+form-control:focus {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none !important;
+    outline-color: #fff;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul,
+li,
+div,
+a:visited,
+a:active,
+a:focus {
+    border: none;
+    outline: none !important;
+    background: none;
+    text-decoration: none;
+    box-shadow: none;
+    outline-style: none;
+    outline-color: #fff;
+    -moz-outline-style: none;
+}
+
+a:active,
+a:focus {
+    border: none;
+    outline: none !important;
+    outline-color: #fff;
+    border: none;
+    text-decoration: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    user-select: none;
+}
+
+li:focus,
+li:active {
+    border: none;
+    outline: none !important;
+    outline-color: #fff;
+    border: none;
+    text-decoration: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    object-fit: cover;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    /* display: none; */
+    width: 6px;
+    background-color: var(white);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--white);
+    background: var(--3A2E7D);
+}
+
+::selection {
+    color: var(--white);
+    background: var(--3A2E7D);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none !important;
+    outline-color: #fff;
+}
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus,
+:active {
+    border: none;
+    outline: none !important;
+    outline: -webkit-focus-ring-color auto 0px !important;
+    outline-color: #fff;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+a,
+a:visited {
+    border: none;
+    outline: none;
+    outline-color: #fff;
+}
+
+a:hover,
+a:active,
+a:focus {
+    /*Edit at will*/
+    background: transparent;
+}
+
+select,
+select:focus,
+button:focus,
+textarea:focus,
+input:focus {
+    border: none;
+    outline: none;
+    outline-color: #fff;
+}
+
+.swiper-button-disabled {
+    opacity: 0.5;
+}
+
+.swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* ordered list classes incase of default failure */
+
+ol[type="armenian"] {
+    list-style-type: armenian;
+}
+
+ol[type="cjk-ideographic"] {
+    list-style-type: cjk-ideographic;
+}
+
+ol[type="decimal"] {
+    list-style-type: decimal;
+}
+
+ol[type="decimal-leading-zero"] {
+    list-style-type: decimal-leading-zero;
+}
+
+ol[type="georgian"] {
+    list-style-type: georgian;
+}
+
+ol[type="hebrew"] {
+    list-style-type: hebrew;
+}
+
+ol[type="hiragana"] {
+    list-style-type: hiragana;
+}
+
+ol[type="hiragana-iroha"] {
+    list-style-type: hiragana-iroha;
+}
+
+ol[type="katakana"] {
+    list-style-type: katakana;
+}
+
+ol[type="katakana-iroha"] {
+    list-style-type: katakana-iroha;
+}
+
+ol[type="lower-alpha"] {
+    list-style-type: lower-alpha;
+}
+
+ol[type="lower-greek"] {
+    list-style-type: lower-greek;
+}
+
+ol[type="lower-latin"] {
+    list-style-type: lower-latin;
+}
+
+ol[type="lower-roman"] {
+    list-style-type: lower-roman;
+}
+
+ol[type="A"] {
+    list-style-type: upper-alpha;
+}
+
+ol[type="upper-latin"] {
+    list-style-type: upper-latin;
+}
+
+ol[type="upper-roman"] {
+    list-style-type: upper-roman;
+}
+
+ol[type="none"] {
+    list-style-type: none;
+}
+
+ol[type="inherit"] {
+    list-style-type: inherit;
+}
+
+[type="submit"],
+button,
+html [type="button"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input [type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
+
+table {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
+input:not(:placeholder-shown) {
+    font-weight: bold;
+}
+
+textarea:not(:placeholder-shown) {
+    font-weight: bold;
+}
+
+/* #masthead {
+    width: 100%;
+    position: fixed;
+    top: 0;
+} */
+
+.ast-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="reset"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+.wp-block-search__input:focus,
+[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal:focus,
+.ast-mobile-popup-drawer.active .menu-toggle-close:focus,
+.woocommerce-ordering select.orderby:focus,
+#ast-scroll-top:focus,
+.woocommerce a.add_to_cart_button:focus,
+.woocommerce .button.single_add_to_cart_button:focus {
+    border-style: none;
+    border: none;
+    outline: none;
+}
+
+#loading {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+}
+
+#loading-image {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    z-index: 100;
+}
+
+.cta_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: fit-content;
+    height: 100%;
+    max-height: fit-content;
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.common-title {
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1.68em;
+    font-weight: 500;
+    letter-spacing: -1%;
+}
+
+.common-desc {
+    line-height: 1.5em;
+    color: #667085CC;
+    opacity: 0.8;
+}
+
+.common-cta {
+    display: block;
+    position: relative;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.21em;
+    padding: 0.75em 3em;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    text-align: center;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--green);
+        border: 2px solid var(--green);
+    }
+}
+
+.round-cta {
+    display: block;
+    position: relative;
+    background-color: transparent;
+    color: var(--green);
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 1em 3em;
+    border: 2px solid var(--green) !important;
+    border-radius: 5em;
+
+    &:hover {
+        background-color: var(--green);
+        color: var(--white);
+    }
+}
+
+/* custom container */
+
+.my_container {
+    width: 100%;
+    max-width: 93.06%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.partial_container {
+    width: 100%;
+    max-width: 96.52%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1536px) {
+
+    .my_container {
+        max-width: 1340px;
+    }
+}
+
+@media (min-width: 1921px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1366px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1280px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 10px;
+    }
+
+    .my_container,
+    .partial_container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
